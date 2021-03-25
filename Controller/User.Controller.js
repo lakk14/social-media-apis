@@ -53,6 +53,8 @@ module.exports = {
             const fromUsername = req.params.fromUsername;
             const toUsername = req.params.toUsername;
 
+            if (fromUsername == toUsername) return res.status(400).send(response(400, 'You cannot follow yourself', null));
+
             //fromUsername Exist Check
             const fromUsernameExist = await User.findOne({ username: fromUsername });
             if (!fromUsernameExist) return res.status(400).send(response(400, 'Requestor username doesn\'t Exists', null));

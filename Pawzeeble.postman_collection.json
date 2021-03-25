@@ -20,12 +20,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3200/api/create-user/",
+					"raw": "http://65.0.102.186:3822/api/create-user/",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"65",
+						"0",
+						"102",
+						"186"
 					],
-					"port": "3200",
+					"port": "3822",
 					"path": [
 						"api",
 						"create-user",
@@ -41,12 +44,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3200/api/get-user/lakk14",
+					"raw": "http://65.0.102.186:38220/api/get-user/lakk14",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"65",
+						"0",
+						"102",
+						"186"
 					],
-					"port": "3200",
+					"port": "38220",
 					"path": [
 						"api",
 						"get-user",
@@ -62,12 +68,15 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3200/api/follow/lakk14/laukik",
+					"raw": "http://65.0.102.186:3822/api/follow/lakk14/laukik",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"65",
+						"0",
+						"102",
+						"186"
 					],
-					"port": "3200",
+					"port": "3822",
 					"path": [
 						"api",
 						"follow",
@@ -93,12 +102,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3200/api/create-post/lakk14",
+					"raw": "http://65.0.102.186:3822/api/create-post/lakk14",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"65",
+						"0",
+						"102",
+						"186"
 					],
-					"port": "3200",
+					"port": "3822",
 					"path": [
 						"api",
 						"create-post",

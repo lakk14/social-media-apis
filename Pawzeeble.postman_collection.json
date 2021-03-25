@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"laukik\"\r\n}",
+					"raw": "{\r\n    \"username\":\"Jack\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -44,7 +44,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://65.0.102.186:38220/api/get-user/lakk14",
+					"raw": "http://65.0.102.186:3822/api/get-user/lakk14",
 					"protocol": "http",
 					"host": [
 						"65",
@@ -52,7 +52,7 @@
 						"102",
 						"186"
 					],
-					"port": "38220",
+					"port": "3822",
 					"path": [
 						"api",
 						"get-user",

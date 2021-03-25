@@ -35,6 +35,6 @@ app.use((err, req, res, next) => {
     })
 })
 
-app.listen(3200, () => { console.log("ef-backend started"); }); //Startig Application
+app.listen(3822, () => { console.log("ef-backend started"); }); //Startig Application
 
 module.exports = app;

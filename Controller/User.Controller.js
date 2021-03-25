@@ -26,7 +26,7 @@ module.exports = {
         try {
 
             const { username } = req.body;
-            if (!userName) return res.status(400).send(response(400, 'All fields are required', null));
+            if (!username) return res.status(400).send(response(400, 'All fields are required', null));
 
             //Username Exist Check
             const usernameExist = await User.findOne({ username: username });

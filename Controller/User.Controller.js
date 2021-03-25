@@ -64,7 +64,10 @@ module.exports = {
             //adding following in requestor
             let requestorFollowing = [];
             let buffer = fromUsernameExist.following;
-            if (buffer.includes(toUsername)) return res.status(202).send(response(202, 'You already follow the target', "success"));
+            if (buffer.length != 0) {
+                if (buffer.includes(toUsername)) return res.status(202).send(response(202, 'You already follow the target', "success"));
+            }
+
             requestorFollowing.push(toUsername);
             let i = 0;
             for (i in buffer) {
@@ -74,14 +77,16 @@ module.exports = {
 
             //adding follower in target
             let targetFollower = [];
-            let buffer2 = toUsernameExist.follower
-            if (buffer2.includes(fromUsername)) return res.status(202).send(response(202, 'You already follow the target', "success"));
+            let buffer2 = toUsernameExist.followers
+            if (buffer2.length != 0) {
+                if (buffer2.includes(fromUsername)) return res.status(202).send(response(202, 'You already follow the target', "success"));
+            }
             targetFollower.push(fromUsername);
             let j = 0;
             for (j in buffer2) {
                 targetFollower.push(buffer2[j]);
             }
-            let targetEntry = await User.updateOne({ username: toUsername }, { following: targetFollower }, null);
+            let targetEntry = await User.updateOne({ username: toUsername }, { followers: targetFollower }, null);
 
             return res.status(202).send(response(202, fromUsername + ' is following to ' + toUsername, "success"));
 

@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const post = new mongoose.Schema({
     postId: {
         type: Number,
-        unique: true,
         required: true
     },
     imageUrl: {

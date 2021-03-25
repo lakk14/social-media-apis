@@ -1,0 +1,5 @@
+{
+    "DB_CONNECT": "mongodb+srv://admin:admin@cluster0.f3y5p.mongodb.net/udb?retryWrites=true&w=majority",
+    "ACCESS_TOKEN_SECRET": "c4e6d2ffa015258ef40a46307278ef84c9b39b8d94ed6587ecf2186814edc21a",
+    "REFRESH_TOKEN_SECRET": "81af7de595fd9803d0b18acd989aaae4c1ad7473ecb7625b549ff218eb6ff4b7"
+}
